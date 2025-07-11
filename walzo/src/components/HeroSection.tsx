@@ -43,7 +43,7 @@ const HeroSection = () => {
   return (
     <section 
       ref={sectionRef}
-      className="min-h-screen bg-walzo-lime relative overflow-hidden flex items-center py-20"
+      className="min-h-screen bg-[#DBFF48] relative overflow-hidden flex items-center py-20"
     >
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

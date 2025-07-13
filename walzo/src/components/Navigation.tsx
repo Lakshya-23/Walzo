@@ -11,7 +11,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Create scroll trigger for navbar background change
+      
       ScrollTrigger.create({
         trigger: "body",
         start: "100px top",
@@ -72,7 +72,7 @@ const Navigation = () => {
           </button>
         </div>
 
-        {/* CTA Button */}
+        
         <Button
           onClick={() => navigate('/catalog')}
           className="bg-walzo-lime text-walzo-teal hover:bg-walzo-lime/90 font-semibold px-6 py-2 rounded-full max-sm:hidden"

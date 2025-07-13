@@ -120,16 +120,12 @@ All colors MUST be HSL.
   border: 2px solid #0A2540; 
 }
 
-/* Add this to your main CSS file, like globals.css */
-
 .soft-edge-mask {
-  /* This creates a soft, feathered edge by masking the image */
+
   mask-image: radial-gradient(circle, black 70%, transparent 100%);
   -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
 }
 
 .soft-edge-glow {
-  /* This adds a glow using the same color as your background */
-  /* #DFFF00 is your walzo-lime color */
   filter: drop-shadow(0 0 2rem rgba(223, 255, 0, 0.6));
 }

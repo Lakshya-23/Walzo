@@ -5,17 +5,17 @@ import { useNavigate } from 'react-router-dom';
 import HeroImg from '/lovable-uploads/hero.webp';
 
 const HeroSection = () => {
-  // We only need refs for the elements we want to animate individually.
+ 
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // We create a GSAP context for safe cleanup
+    
     const ctx = gsap.context(() => {
-      // Animate the text content entrance
+      
       const tl = gsap.timeline({ 
-        delay: 0.5 // Reduced delay for a snappier feel
+        delay: 0.5 
       });
 
       tl.from(".hero-text-content", {
@@ -26,18 +26,18 @@ const HeroSection = () => {
         ease: "power2.out"
       });
       
-      // Floating animation for the image
+      
       gsap.to(imageRef.current, {
-        y: -10, // How high it floats
-        duration: 5, // How long one "bob" takes
-        repeat: -1, // Repeat forever
-        yoyo: true, // Go back and forth
-        ease: "sine.inOut" // A very smooth, natural ease
+        y: -10, 
+        duration: 5,
+        repeat: -1, 
+        yoyo: true, 
+        ease: "sine.inOut" 
       });
 
-    }, sectionRef); // Scope the context to the section
+    }, sectionRef); 
 
-    return () => ctx.revert(); // Cleanup GSAP animations on unmount
+    return () => ctx.revert(); 
   }, []);
 
   return (
@@ -47,10 +47,10 @@ const HeroSection = () => {
     >
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
+          
           <div className="space-y-8">
             <div 
-              // Added a common class for easier targeting with GSAP
+              
               className="hero-text-content text-4xl md:text-6xl lg:text-7xl font-black text-walzo-teal leading-tight"
             >
               The Most Reliable Way to{' '}
@@ -76,16 +76,16 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Floating Images */}
+          
           <div 
-            ref={imageRef} // Add ref to the container for animation
+            ref={imageRef} 
             className="relative h-[400px] lg:h-[600px] hidden lg:block "
           >
             <img 
               src={HeroImg} 
-              // Improved alt text for accessibility
+              
               alt="An illustration of Walzo's platform connecting different business elements" 
-              // Optimized classes to make the image fit its container
+              
               className="absolute inset-0 w-full h-full object-contain mix-blend-multiply soft-edge-mask soft-edge-glow "
             />
           </div>

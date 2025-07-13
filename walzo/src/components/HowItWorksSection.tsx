@@ -49,7 +49,7 @@ const HowItWorksSection = () => {
       
       tl.fromTo('.reel-container', { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5 }, "-=0.5");
 
-      // Animate the reel and proxy object simultaneously
+      
       tl.to(reelRef.current, {
         y: `-${(materials.length - 1) * TOTAL_ITEM_HEIGHT}px`,
         duration: 4,
@@ -60,10 +60,10 @@ const HowItWorksSection = () => {
         index: materials.length - 1,
         duration: 4,
         ease: 'power1.inOut',
-        // onUpdate will fire on every frame of this tween
+        
         onUpdate: () => {
             const currentIndex = Math.round(proxy.index);
-            // We use a functional state update to ensure we always have the latest state
+            
             setActiveIndex((prevIndex) => {
                 if (currentIndex !== prevIndex) {
                     setActiveMaterial(materials[currentIndex]);
@@ -77,24 +77,20 @@ const HowItWorksSection = () => {
     }, sectionRef);
 
     return () => ctx.revert();
-    
-    // THE FLICKER FIX: Use an empty dependency array.
-    // This ensures the GSAP timeline is created ONLY ONCE and is not
-    // destroyed and recreated on every state change.
   }, []); 
 
   return (
     <section ref={sectionRef} className="py-24 bg-white relative" style={{ minHeight: '100vh' }}>
       <div className="container mx-auto px-6 lg:px-8 h-full">
-        {/* THE WIDTH FIX: Switch from a 2-column to a 5-column grid on large screens */}
+        
         <div className="grid lg:grid-cols-5 gap-16 h-full items-center">
           
-          {/* Give the model 3 out of 5 columns (60% width) */}
+          
           <div ref={leftColRef} className="lg:col-span-3 relative w-full h-[50vh] lg:h-[80vh]">
             <SofaScene color={activeMaterial.color} />
           </div>
 
-          {/* Give the content 2 out of 5 columns (40% width) */}
+          
           <div className="lg:col-span-2 flex flex-col justify-center">
             <div className="space-y-8 mb-8 heading-content">
               <h2 className="text-4xl md:text-5xl font-black text-walzo-teal leading-tight">

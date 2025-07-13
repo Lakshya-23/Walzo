@@ -9,10 +9,6 @@ const SparkathonSection = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Parallax animation for the image
-      
-
-      // Floating animation for the image
       gsap.to(imageRef.current, {
         y: 20,
         duration: 2,

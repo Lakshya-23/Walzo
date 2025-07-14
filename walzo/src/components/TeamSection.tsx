@@ -32,32 +32,32 @@ const TeamSection = () => {
 
   const teamMembers = [
     {
-      name: "Alex Rodriguez",
-      role: "Lead Developer & Co-Founder",
-      avatar: "AR",
-      github: "#",
-      linkedin: "#"
+      name: "Lakshya Varshney",
+      role: "Lead Developer",
+      avatar: "LV",
+      github: "https://github.com/Lakshya-23",
+      linkedin: "https://www.linkedin.com/in/lakshvarshney"
     },
     {
-      name: "Priya Sharma",
-      role: "Product Manager & Co-Founder", 
-      avatar: "PS",
-      github: "#",
-      linkedin: "#"
+      name: "Sonali Verma",
+      role: "Product Manager & Presentation Lead", 
+      avatar: "SV",
+      github: "https://github.com/sonaliverma01",
+      linkedin: "http://www.linkedin.com/in/sonali-verma-857911230"
     },
     {
-      name: "Michael Chen",
-      role: "UI/UX Designer",
-      avatar: "MC",
+      name: "Prakhar Tripathi",
+      role: "ML Developer",
+      avatar: "PT",
       github: "#", 
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/prakhar-tripathi-7a18a0341"
     },
     {
-      name: "Sarah Johnson",
-      role: "Logistics Strategist",
-      avatar: "SJ",
-      github: "#",
-      linkedin: "#"
+      name: "Vaibhav Singh",
+      role: "ML Developer & Video Editor",
+      avatar: "VS",
+      github: "https://github.com/VBV-py",
+      linkedin: "https://www.linkedin.com/in/vbv-singh2005"
     }
   ];
 
@@ -70,7 +70,7 @@ const TeamSection = () => {
             Meet the Team
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Passionate innovators building the future of B2B furniture sourcing
+            Passionate innovators building the future of B2B sourcing
           </p>
         </div>
 

@@ -55,7 +55,7 @@ const HeroSection = () => {
             >
               The Most Reliable Way to{' '}
               <span className="text-walzo-teal/80">Source and Scale</span>{' '}
-              Furniture
+              
             </div>
             
             <div 

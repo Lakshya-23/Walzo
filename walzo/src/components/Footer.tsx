@@ -9,13 +9,13 @@ const Footer = () => {
           {/* Logo/Brand */}
           <div>
             <h3 className="text-4xl font-black text-white mb-2">Walzo</h3>
-            <p className="text-white/70">Revolutionizing B2B Furniture Sourcing</p>
+            <p className="text-white/70">Revolutionizing B2B Sourcing</p>
           </div>
 
           {/* Links */}
           <div className="flex justify-center gap-8">
             <a 
-              href="#"
+              href="https://github.com/Lakshya-23/Walzo"
               className="flex items-center gap-2 text-white/80 hover:text-walzo-lime transition-colors duration-300"
             >
               <Github className="w-5 h-5" />

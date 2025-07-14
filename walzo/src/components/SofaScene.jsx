@@ -16,7 +16,7 @@ const SofaScene = ({ color }) => {
           <SofaModel color={color} />
         </Stage>
       </Suspense>
-      {/* THE FIX: All interactions are now disabled. The model will not rotate or move. */}
+      {/*  interactions disabled.*/}
       <OrbitControls 
         enableZoom={false} 
         enablePan={false} 

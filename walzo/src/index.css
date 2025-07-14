@@ -6,6 +6,14 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
+/* Add these styles to make percentage heights and h-screen work reliably */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f9;
+}
 
 @layer base {
   :root {
@@ -56,6 +64,7 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -104,6 +113,7 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
 
 /* Custom Scrollbar for Webkit Browsers */
 ::-webkit-scrollbar {

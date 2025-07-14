@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Catalog from "./pages/Catalog";
 import NotFound from "./pages/NotFound";
+import AdminPanel from "./pages/Admin";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/catalog" element={<Catalog />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/admin" element={<AdminPanel/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -49,7 +49,7 @@ const TeamSection = () => {
       name: "Prakhar Tripathi",
       role: "ML Developer",
       avatar: "PT",
-      github: "#", 
+      github: "https://github.com/PrakharTripathi4488", 
       linkedin: "https://www.linkedin.com/in/prakhar-tripathi-7a18a0341"
     },
     {
